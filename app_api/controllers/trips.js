@@ -27,7 +27,6 @@ const tripsFindCode = async (req, res) => {
   });
 };
 
-/*
 const tripsUpdateTrip = async (req, res) => {
   console.log(req.body);
   getUser(req, res, (req, res) => {
@@ -109,11 +108,10 @@ const getUser = (req, res, callback) => {
     return res.status(404).json({ message: "User not found" });
   }
 };
-*/
 
 module.exports = {
   tripsList,
   tripsFindCode,
-  //tripsAddTrip,
-  //tripsUpdateTrip,
+  tripsAddTrip,
+  tripsUpdateTrip,
 };
